@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar CSS</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar CSS (1/2)</title>
+</head>
+<body>
+    <div>
+        <h1 style="color:red;">Temos 3 formas de incersao de nosso CSS em nosso HTML, sendo elas:</h1>
+        <ul>
+            <li>CSS Inline</li>
+            <li>CSS Interno</li>
+            <li>CSS Externo</li>
+        </ul>
+        <p style="color: rgb(168, 150, 185);">
+            Para usarmos o <strong>CSS Inline</strong>: iremos usar o atributo <strong>style</strong> e nesse atributo iremos adicionar os nossos codigos CSS, e tudo que colocarmos dentro desse atributo style, sera interpretado pelo navegador como CSS.
+        </p>
+    </div>
+</body>
+</html>
+</body>
+</html>
