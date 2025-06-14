@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+}
+
+body {
+    max-width: 750px;
+    margin: auto;
+    text-align: center;
+    background-color: bisque;
+}
+
+#main {
+    background-color: aliceblue;
+    padding: 50px;
+    margin: 20px 10px;
+}
+
+#exemplo {
+    background-color: rgba(137, 43, 226, 0.463);
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#ex2 {
+    border: 1px solid black;
+    margin: 10px 0px;
+}
+
+#ex2 img {
+    width: 100%;
+    /* overflow: hidden; */
+}
