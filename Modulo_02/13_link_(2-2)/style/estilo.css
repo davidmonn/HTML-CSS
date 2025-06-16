@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: bisque;
+    max-width: 750px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+main {
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#title,
+p {
+    margin: 10px auto;
+}
+
+#title {
+    color: rgb(1, 79, 1);
+}
+
+p {
+    text-indent: 25px;
+    text-align: left;
+}
+
+h2 strong {
+    color: rgb(163, 0, 0);
+    border-bottom: 1px dashed black;
+}
