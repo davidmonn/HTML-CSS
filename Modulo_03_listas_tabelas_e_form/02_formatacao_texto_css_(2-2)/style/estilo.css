@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 255, 0.388);
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+#main {
+    background-color: aqua;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+title,
+h1,
+h2 {
+    text-align: center;
+    color: rgba(0, 0, 255, 0.521);
+    margin: 30px auto;
+    font-size: 50px;
+}
+
+p {
+    font-size: 18px;
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+    transition: 1s;
+}
+
+strong {
+    text-decoration: underline;
+    color: red;
+}
+
+.t1 {
+  text-transform: uppercase;  
+}
+
+.t2 {
+    letter-spacing: 10px;
+}
+
+.t3 {
+    word-spacing: 15px;
+}
+
+.t4 {
+    line-height: 30px;
+}
+
+.t5 {
+    text-shadow: 0px 2px 3px blueviolet;
+}
