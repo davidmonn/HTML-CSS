@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: aqua;
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+main {
+    background-color: rgba(137, 43, 226, 0.365);
+    padding: 20px;
+}
+
+#title,
+p {
+    margin: 20px auto;
+}
+
+#title {
+    text-align: center;
+}
+
+p {
+    text-indent: 25px;
+    text-align: left;
+}
+
+main div a {
+    text-decoration: none;
+    text-align: right;
+}
+
+main div a:hover {
+    color: rgba(142, 5, 5, 0.934);
+    transition: 1s;
+}
