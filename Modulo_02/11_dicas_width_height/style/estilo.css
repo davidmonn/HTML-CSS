@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 850px;
+    margin: 20px auto;
+    background-color: aqua;
+    text-align: center;
+}
+
+#titulo,
+p,
+#exemplo {
+    margin: 20px 0px;
+}
+
+p {
+    text-indent: 25px;
+}
+
+#exemplo {
+    margin: 20px auto;
+    padding: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: greenyellow;
+    border: 5px solid black;
+}
