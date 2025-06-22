@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="style/estilo.css"
+</head>
+<body>
+
+    <div id="main">
+
+        <a href="../07_formularios/index.html">Formulario</a>
+
+        <h1 id="title">Input:</h1>
+        <p>
+            Os inputs sao basicamente as tags mais importantes de um <strong>formulario</strong>, atraves dessas tags conseguimos obter as informacoes passadas pelo usuario.
+        </p>
+
+        <p>
+            Ao criarmos um imput, comecamos escolhendo seu tipo, possuindo diversos atributos.  Logo depois de Type, temos tambem seu name. É muito importante colocarmos um name em todos os input que fizermos com excessao do botao que so ira servir para enviar.
+        </p>
+
+        <h2>Ex:</h2>
+
+
+        <form action="" method="GET">
+
+            <h4>Criar conta:</h4> <br>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            
+            <br> <br>
+
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email">
+
+            <br> <br>
+
+            <label for="pass">Senha:</label>
+            <input type="password" name="senha" id="pass">
+
+            <br> <br>
+
+            <input type="radio" name="sexo"> Homem <br>
+            <input type="radio" name="sexo"> Mulher <br> 
+            
+            <br>
+
+            <input type="checkbox" id="verificar">
+            <label for="verificar">Aceito os termos de uso</label> <br> <br>
+
+
+            <input id="botao" type="submit" value="Criar" >
+
+        </form>
+
+        <h1>Inputs usados acima:</h1>
+        <ul>
+            <li><strong>text</strong></li>
+            <li><strong>email</strong></li>
+            <li><strong>password</strong></li>
+            <li><strong>checkbox</strong></li>
+            <li><strong>submit</strong></li>
+        </ul>
+
+
+    </div>
+    
+</body>
+</html>

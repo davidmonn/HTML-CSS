@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 255, 0.388);
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+#main {
+    background-color: aqua;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+title,
+h1,
+h2,
+h3 {
+    text-align: center;
+    color: rgba(0, 0, 255, 0.521);
+    margin: 30px auto;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+
+p {
+    font-size: 18px;
+    margin: 20px auto;
+    text-indent: 25px;
+}
+
+#botao {
+    padding: 3px;
+    border-radius: 15%;
+}
+
+ul {
+    border: 1px solid black;
+}
+
+ul li {
+    margin: 0px 150px;
+}
