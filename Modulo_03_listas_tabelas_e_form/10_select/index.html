@@ -10,9 +10,55 @@
 
     <div id="main">
 
-        <a href="../08_input_form/index.html">Voltar para aula - Input</a>
+        <a href="../09_input_html/">Voltar para aula - Input</a>
 
         <h1 id="title">Select</h1>
+
+        <p>
+            Alem dos input temos outras tags que podemos colocar em nosso <strong>formulario</strong>, que e o <strong>select</strong>.
+        </p>
+
+        <h2>Select:</h2>
+        <p>
+            Diferente do input ele abre e fecha. Ex: < select > < /select >, basicamente o <strong>select</strong> é a opcao onde clicamos e abre algumas opcoes disponiveis. Dentro de nosso <strong>select</strong> utilizamos a tag <br> <strong>< option ></strong>, para podermos adicionar itens em nosso <strong>select</strong>
+        </p>
+
+        <p>
+            <strong>Ex:</strong>
+        </p>
+
+        <form action="">
+            <select name="teste" id="teste">
+                <option value=""></option>
+                <option value="All">Todas as Vagas</option>
+                <option value="Programador">Programador</option>
+                <option value="Aux-Prod">Auxiliar de Producao</option>
+                <option value="Engenheiro">Engenheiro</option>
+                <option value="Tec-TI">Tecnico de TI</option>
+            </select>
+            <input type="submit" name="Enviar" id="teste">
+        </form>
+
+        <p>
+            O option tem duas versoes de valores diferentes que podemos usar para ele, uma coisa e oque o usuario esta vendo, outra coisa e oque iremos enviar no formulario. Se formos na <strong>tag option</strong> e colocarmos o atributo <strong>value</strong> conseguimos definir um valor especifico para esse item que foi escolhido pelo usuario, visualmente para o usuario sera mostrado a opcao dentro da option e para os programadores pode receber com o nome usado no value. Quando nao colocamos um value, sera enviado com o mesmo nome do item exibido, ja se usarmos com value, sera enviado com o valor do value.
+        </p>
+
+        <h2>Podemos fazer tambem um selected com multipla escolhas.</h2>
+        <p>
+            Ex: <br>
+        </p>
+        <form action="">
+            <select name="teste2" id="teste2" size="2" multiple>
+
+                <option value=""></option>
+                <option value="">Animacao</option>
+                <option value="">Comedia</option>
+                <option value="">Drama</option>
+                <option value="">Ficcao</option>
+                <option value="">Terror</option>
+                
+            </select>
+        </form>
 
     </div>
     
