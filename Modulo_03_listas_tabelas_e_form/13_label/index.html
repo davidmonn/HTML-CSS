@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Label</title>
-    <link rel="stylesheet" href="style/estilo.css"
+    <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
@@ -15,13 +15,49 @@
         <h1 id="title">Label</h1>
 
         <p>
+            Usamos o <strong>label</strong>, quando queremos basicamente definir um input como por exemplo: aqui sera usado para nome, outro para email, outro para senha e etc, visualmente para o usuario nao fara tanta diferenca, mas para a gente ficara basicamente assim: <br> <br>
+
+            <strong>sem label:</strong> <br>
+            < input type="text" name="nome" >  <br> <br>
+
+            <strong>Com label:</strong> <br>
+            < label for="nome" >Nome: < / label > <br>
+            < input type="text" name="nome" id="" >
             
+        </p>
+
+        <p>
+            No <strong>for</strong> de nosso <strong>label</strong>, usamos o <strong>name ou id</strong> de nosso <strong>input</strong>, para que ele possa ligar um ao outro. Apos ligado e muito util pois nao precisamos necessariamente clicar apenas na caixinha de nosso input mas tambem ao clicar em cima da palavra ligada com label, ira para nosso input.
+        </p>
+
+        <p>
+            Exemplo de uso:
+        </p>
+
+        <form action="">
+            <label for="termo">Declaro que li e aceito os termos</label> <br>
+            <input type="checkbox" id="termo">
+        </form>
+
+        <p>
+            Outra forma que temos de adicionar o <strong>label</strong> em nosso input, e colocar o <strong>input</strong> dentro da tag <strong>label</strong>. <br>
+            Ex:
+        </p>
+
+        <p>
+            < label > Email <br>
+                < input type="email" name="email" placeholder="Email:" > <br>
+            < /label >
+        </p>
+
+        <p>
+            Essa segunda opcao vem sendo mais utilizada por dar um visual mais clean para o nosso codigo.
         </p>
 
         
 
        
-    <a href="../13_label/" id="next"></a>
+    <a href="../14_formatando_formulario_(1-2)/index.html" id="next">Proxima aula - Formatando Formulario (1/2)</a>
 
     </div>
     
