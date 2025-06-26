@@ -31,8 +31,7 @@
             
 
             <label>Sexo: 
-                <br>
-                <input type="radio" name="sexo">Masculino <br>
+                <input type="radio" name="sexo">Masculino
                 <input type="radio" name="sexo"> Feminino
             </label>
 
@@ -42,15 +41,13 @@
                 <input type="email" name="email" placeholder="Email:" class="email">
             </label>
 
-            <br>
-
             <label>Senha: 
                 <input type="password" name="senha" placeholder="Senha:" class="senha">
             </label>
 
             
 
-            <label>Profissao: <br>
+            <label>Profissao:
                 <select name="profissao" id="profissao">
                     <option value="null"></option>
                     <option value="aux-prod">Auxiliar de Producao</option>
@@ -63,41 +60,70 @@
             </label>
 
 
-
-            <label>Hobbies: <br>
-                <input type="radio" name="hobbie"> Assistir <br>
-                <input type="radio" name="hobbie"> Estudar <br>
-                <input type="radio" name="hobbie"> Praticar Esporte <br>
-                <input type="radio" name="hobbie"> Jogar <br>
-                <input type="radio" name="hobbie"> Assistir (Series/Filmes) <br>
-                <input type="radio" name="hobbie"> Redes Sociais <br>
-                <input type="radio" name="hobbie"> Sair <br>
-                <input type="radio" name="hobbie"> Tocar algum estrumento <br>
-                <input type="radio" name="hobbie"> Nem uma das opcoes <br>
+            <label>Hobbies:
+                <input type="radio" name="hobbie"> Assistir
+                <input type="radio" name="hobbie"> Estudar
+                <input type="radio" name="hobbie"> Praticar Esporte
+                <input type="radio" name="hobbie"> Jogar
+                <input type="radio" name="hobbie"> Assistir (Series/Filmes)
+                <input type="radio" name="hobbie"> Redes Sociais
+                <input type="radio" name="hobbie"> Sair
+                <input type="radio" name="hobbie"> Tocar algum estrumento
+                <input type="radio" name="hobbie"> Nem uma das opcoes
             </label>
 
          
 
-            <label>Fale um pouco sobre voce: <br>
+            <label>Fale um pouco sobre voce:
                 <textarea name="comentario" id="comentario" placeholder="Descricao" class="desc">
                 </textarea>
             </label>
 
             
 
-            <label>Li e aceito os <a href="#" target="_blank">termos de uso</a>
+            <label>Li e aceito os <a href="#" target="_blank" class="termoslink">termos de uso</a>
                 <input type="checkbox" name="termo" class="termo">
             </label>
 
            
 
-            <input type="submit" value="Criar Conta" class="enviar">
+            <button class="enviar"> Criar Conta </button>
             
 
         </form>
 
+
+        <div id="comentarios">
+            <h3>Observacoes:</h3>
+            <p>
+                Ate o momento foram feito as seguintes confg. em nosso CSS:
+            </p>
+            <p>
+                <strong class="red">label</strong> {<br>
+                        <strong>display</strong>: block;<br>
+                        <strong>margin</strong>: 20px auto;<br>
+                        } <br> <br>
+                <strong class="red">input[type=text],[type=email],[type=password], textarea</strong>{ <br>
+                    <strong>display</strong>: block; <br>
+                    <strong>padding</strong>: 5px; <br>
+                    <strong>width</strong>: 350px; <br>
+                    <strong>font-size</strong>: 15px; <br>
+                    <strong>border</strong>: 1px solid #CCC; <br>
+                    <strong>outline</strong>: 0; *Usado adicionar ou remover um contorno ao redor de um elemento, nesse caso usamos para remover o contorno. <br>
+                    <strong>margin</strong>: 5px; <br>
+                } <br> <br>
+                <strong class="red">textarea</strong> { <br>
+                    <strong>height</strong>: 150px; <br>
+                } <br> <br>
+            </p>
+            <p>
+                Em nossa tag <strong>textarea</strong> podemos remover a opcao do usuario ficar expandindo o tamanho, para nao baguncar nosso layout usando o <strong>resize: none;</strong>
+            </p>
+        </div>
+        
+
        
-    <a href="../" id="next"></a>
+    <a href="../16_tag_fieldset_e_legend/index.html" id="next">Proxima aula - Tags Fieldset e Legend</a>
 
     </div>
     
