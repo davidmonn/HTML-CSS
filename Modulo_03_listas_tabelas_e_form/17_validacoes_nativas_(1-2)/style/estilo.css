@@ -103,11 +103,17 @@ textarea {
     text-decoration: underline;
 }
 
-[type=button] {
+[type=submit] {
     background-color: #EEE;
-    padding: 10px;
+    padding: 5px;
     font-size: 15px;
-    border: 1px solid #CCC;
+    border: 2px solid #CCC;
+}
+
+[type=submit]:hover {
+    background-color:rgba(0, 0, 255, 0.091);
+    transition: 0.5s;
+    border: 2px solid rgba(0, 0, 255, 0.091);
 }
 
 #cont-form {
