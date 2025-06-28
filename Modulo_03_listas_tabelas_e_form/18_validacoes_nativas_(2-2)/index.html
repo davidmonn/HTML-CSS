@@ -17,6 +17,32 @@
             Sempre que temos um formulario, quando clicamos no botao de "envio" do form, geralmente a gente faz um processo antes de enviar, chamado de <strong>validacao</strong> esse processo ira verificar basicamente se os dados estao preenchidos e se os dados que estao preenchidos, estao de acordo com o minimo que precisamos, Ex: um campo de idade, nao faria sentido ter letras, apenas numeros e o suficiente.
         </p>
 
+        <p>
+            <strong>Iremos ver os principais tipos de pre validacoes nativas:</strong>
+        </p>
+        
+        <ul>
+            <li>
+                <strong>required:</strong> torna o campo obrigatorio.
+            </li>
+            <li>
+                <strong>minlength:</strong> minimo de caracteres que o usuario precisara para preencher o campo.
+            </li>
+            <li>
+                <strong>maxlength:</strong> maximo de caracteres que o usuario podera usar para preencher o campo.
+            </li>
+            <li>
+                <strong>step:</strong> em um type com number, podemos usar <strong>step</strong> para quando o usuario clicar em escolher idade ele ira pulando para quantidade que tiver no step.
+            </li>
+            <li>
+                <strong>min:</strong> minimo que o usuario tera que ter para acessar o site.
+            </li>
+            <li>
+                <strong>max:</strong> maximo que o usuario podera ter, como usamos idade, entao o maximo que o usuario podera ter de idade.
+            </li>
+        </ul>
+        
+
         <!-- Formulario -->
         <div id="cont-form">
     
@@ -30,6 +56,15 @@
                     </label>
                     <label>Sobrenome:
                         <input type="text" name="lastname" placeholder="Sobrenome:" required minlength="2">
+                    </label>
+                    <label>Email:
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>Idade:
+                        <input type="number" name="age" required min="18" max="120">
+                    </label>
+                    <label>Data de Nascimento:
+                        <input type="date" name="nasc" max="31">
                     </label>
                 </fieldset>
 
@@ -61,7 +96,7 @@
 
 
        
-    <a href="../" id="next"></a>
+    <a href="../19_input_hidden/index.html" id="next">Proxima Aula - Input type="hidden"</a>
 
     </div>
     
