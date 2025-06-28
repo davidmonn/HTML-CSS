@@ -13,9 +13,57 @@
         <a href="../15_formatando_formulario_(2-2)/index.html">Aula anterior - Formatando Formulario (2/2)</a>
 
         <h1 id="title">Tags FieldSet e Legend</h1>
+        <p>
+            As tags <strong> fieldset</strong> e <strong>legends</strong>, sao muito importantes visualmente, para podermos organizar melhor visualmente nosso formulario.
+        </p>
+
+        <p>
+            <strong>Ex:</strong> se tivermos em um formulario de cadastro, dividido em 2 etapas, uma com informacoes pessoais e outra com informacoes profissionais. 
+        </p>
+
+
+        <div id="cont-form">
+
+            <h2>Ex Formulario</h2>
+            
+            <form action="" method="POST">
+                <fieldset>
+                    <legend>Dados Pessoais:</legend>
+                    <label>Primeiro nome:
+                        <input type="text" name="firstname" placeholder="Primeiro nome:">
+                    </label>
+                    <label>Sobrenome:
+                        <input type="text" name="lastname" placeholder="Sobrenome:">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados Profissionais:</legend>
+                    <label> Nome da empresa:
+                        <input type="text" name="companyname" placeholder="Nome da empresa:">
+                    </label>
+                    <label for="optiontitle">Selecione seu cargo:</label>
+                    <select name="optiontitle">
+                        <option value="">Selecione uma opcao</option>
+                        <option value="">Aux de Producao</option>
+                        <option value="">Seguranca</option>
+                        <option value="">Tecnico</option>
+                        <option value="">Coordenador</option>
+                        <option value="">Ajudante</option>
+                        <option value="">limpeza</option>
+                        <option value="">Cargo nao esta na lista</option>
+                    </select>
+                    <label>Se seu cargo nao estiver na lista, informe abaixo <br> <br> Cargo:
+                        <input type="text" name="companytitle" placeholder="Cargo:">
+                    </label>
+                </fieldset>
+
+                <input type="button" value="Enviar">
+            </form>
+        </div>
 
        
-    <a href="../" id="next"></a>
+    <a href="../17_validacoes_nativas_(1-2)/index.html" id="next">Validacao Nativa (1/2)</a>
 
     </div>
     
