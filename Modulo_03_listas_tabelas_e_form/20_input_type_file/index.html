@@ -13,8 +13,67 @@
         <a href="../16_tag_fieldset_e_legend/index.html">Aula anterior - Input type hidden</a>
 
         <h1 id="title">Input type="file"</h1>
+        <p>
+            Agora iremos ver um campo para enviar arquivos, para podermos enviar arquivos junto de nosso formulario. Geralemente arquivos sao enviados atraves do <strong>method="POST"</strong>.
+        </p>
+        <p>
+            Para adicionarmos arquivos iremos usar o <strong>type="file"</strong>, com o usuario conseguira enviar arquivos. Com ele podemos tambem, especificar os tipos de arquivos que poderam ser enviados pelo usuario. Para isso iremos adicionar o <strong>atributo</strong> chamado <strong>accept=""</strong>, nele temos as opcoes:
+        </p>
 
-        <form action="#" method="GET">
+        <ul>
+            <li><strong>input="title" accept="image/*"</strong>: com ele sera aceito qualquer tipo de imagem.</li>
+            <li><strong>input="title" accept="aplication/pdf"</strong>: para aceitar pdf</li>
+        </ul>
+
+        <p>
+            <strong>Obs:</strong> quando temos um arquivo <strong>type="file"</strong>, temos que adicionar uma outra propriedade em nosso form, o nome da <strong>propriedade</strong> e <strong>enctype</strong> para definir como os dados do formulário serão codificados (encodados) quando forem enviados ao servidor.
+        </p>
+
+        <h2>Usos comuns do enctype:</h2>
+
+        <p>
+            <strong>application/x-www-form-urlencoded</strong> (padrão): 
+        </p>
+        <ul>
+            <li>
+                É o modo padrão.
+            </li>
+            <li> 
+                Os dados são codificados como pares chave=valor e enviados na URL (em POST, no corpo).
+            </li>
+            <li>
+                Ex: nome=David&idade=25.
+            </li>
+        </ul>
+
+
+        <p>
+            <strong>multipart/form-data:</strong>
+        </p>
+        <ul>
+            <li>Necessário quando você vai enviar arquivos (< input type="file" >).</li>
+            <li>Os dados são divididos em "partes", com os arquivos incluídos corretamente.</li>
+            <li>Cada parte pode ter um tipo de dado diferente (texto, arquivo etc).</li>
+            <li>Este é o que você precisa usar para uploads.</li>
+        </ul>
+
+        <p>
+            <strong>text/plain:</strong>
+        </p>
+
+        <ul>
+            <li>
+                Raramente usado.
+            </li>
+            <li>
+                Envia os dados como texto simples, separados por quebras de linha.
+            </li>
+            <li>
+                Não recomendado para formulários reais (não suporta arquivos nem codifica os dados corretamente).
+            </li>
+        </ul>
+
+        <form action="#" method="GET" enctype="multipart/form-data">
 
             <fieldset>
                 <legend>Informacoes Pessoais</legend>
@@ -28,6 +87,12 @@
                 </label>
                 <label>Data de Nascimento:
                     <input type="date" name="nasc" id="nasc">
+                </label>
+                <label>Foto:
+                    <input type="file" name="photo" accept="image/*">
+                </label>
+                <label>Curriculo:
+                    <input type="file" name="curriculo" id="curriculo" accept="aplication/pdf">
                 </label>
                 <label>Email:
                     <input type="email" name="email" id="email" placeholder="Email:">
