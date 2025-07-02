@@ -14,60 +14,42 @@
 
         <h1 id="title">CSS - Heranca</h1>
         
+        <p>
+            Aqui iremos ver um conceito muito importante do <strong>CSS</strong> que é <strong>herança</strong>.
+        </p>
+        <p>
+            <strong>herança:</strong> no CSS é quando um elemento HTML recebe automaticamente estilos (valores de propriedades) do seu elemento pai (ou ancestral), sem precisar ser declarado diretamente nele.
+        </p>
 
-        <form action="#" method="GET" enctype="multipart/form-data">
+        <p>Exemplo:</p>
+       
+            <p>
+                Um bom exemplo de herança em CSS é quando temos uma < div > e, dentro dela, colocamos outros elementos, como textos.
+            </p>
+            <p>
+                Se no CSS selecionarmos essa < div > e aplicarmos color: red;, todo o texto dentro dela ficará vermelho.
+            </p>
+            <p>
+                Isso acontece porque o texto está herdando essa propriedade de cor da < div > onde está inserido.
+            </p>
 
-            <fieldset>
-                <legend>Informacoes Pessoais</legend>
-                <input type="hidden" name="country" value="BR">
+            <h2>
+                Exemplo de div com heranca abaixo:
+            </h2>
 
-                <label>Nome:
-                    <input type="text" name="firstname" id="firstname" placeholder="Nome:" required minlength="2">
-                </label>
-                <label>Sobrenome:
-                    <input type="text" name="lastname" id="lastname" placeholder="Sobrenome">
-                </label>
-                <label>Data de Nascimento:
-                    <input type="date" name="nasc" id="nasc">
-                </label>
-                <label>Foto:
-                    <input type="file" name="photo" accept="image/*">
-                </label>
-                <label>Curriculo:
-                    <input type="file" name="curriculo" id="curriculo" accept="aplication/pdf">
-                </label>
-                <label>Email:
-                    <input type="email" name="email" id="email" placeholder="Email:">
-                </label>
-            </fieldset>
-            <fieldset>
-                <legend>Informacoes Extras</legend>
-                <label>Selecione um hobbie:
-                    <select name="hobbie" id="hobbie">
-                        <option value="selection">Selecione um Hobbie</option>
-                        <option value="">Escutar Musica</option>
-                        <option value="">Estudar</option>
-                        <option value="">Jogar</option>
-                        <option value="">Assistir TV</option>
-                        <option value="">Redes Sociais</option>
-                        <option value="">Ler</option>
-                        <option value="">Outro</option>
-                    </select>
-                </label>
-                <label>Se seu hobbie nao estiver acima, nos informe abaixo:
-                    <input type="text" name="" id="" placeholder="Hobbie:">
-                </label>
-                <label>Fale um pouco sobre voce:
-                    <textarea name="" id=""></textarea>
-                </label>
-            </fieldset>
-
-
-        </form>
-
+            <div id="teste">
+                <p>Quando selecionamos uma div e nela contem elementos dentro e nao especificamos, os elementos iram herdar as caracteristicas da div em que estao dentro, dessa forma:</p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum sunt blanditiis facere cumque. Ex ipsam non repudiandae corrupti libero, recusandae modi corporis repellat consectetur, a aut itaque vitae voluptas. Voluptates.
+                </p>
+            </div>
+        
+            <p>
+                É importante saber que não e todas as propriedades que sao herdadas, tem propriedades que não sao herdadas como <strong>border</strong> isso porque a propriedade border e uma propriedade que nao e herdada, normalmente as propriedades que sao herdadas sao referentes ao texto
+            </p>
 
        
-    <a href="../" id="next">Proxima Aula - </a>
+    <a href="../02_especificidade/index.html" id="next">Proxima Aula - Especividade</a>
 
     </div>
     
