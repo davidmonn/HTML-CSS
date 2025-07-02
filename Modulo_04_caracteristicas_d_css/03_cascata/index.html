@@ -13,7 +13,20 @@
         <a href="../02_especificidade/index.html">Aula anterior - Especificidade</a>
 
         <h1 id="title">CSS - Cascata</h1>
-        
+
+        <h2>A ordem de prioridade da cascata (do mais forte para o mais fraco) é:</h2>
+
+        <ul>
+            <li>CSS Inline (escrito direto no HTML, com style="...")</li>
+            
+            <li>CSS Interno ( dentro da tag <strong>style</strong> no HTML ) </li>
+            
+            <li>CSS Externo (em arquivos .css separados)</li>
+        </ul>
+        <p>
+            Ou seja: se houver conflito, o estilo inline vence, depois o interno, e por último o externo. <br>
+            Porém, isso só vale quando a especificidade é a mesma. Se o CSS externo usar um seletor mais específico (como um ID), ele ainda pode vencer o inline.
+        </p>
 
        
     <a href="../" id="next">Proxima Aula - </a>
