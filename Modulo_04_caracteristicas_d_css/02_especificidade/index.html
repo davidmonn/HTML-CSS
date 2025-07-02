@@ -10,14 +10,36 @@
 
     <div id="main">
 
-        <a href=""></a>
+        <a href="../01_heranca/index.html">Aula anterior - Heranca</a>
 
         <h1 id="title">CSS - Especificidade</h1>
-        
+        <p>
+            Especificidade no CSS é o que define qual regra de estilo será aplicada quando há várias regras diferentes tentando alterar o mesmo elemento. Em projetos pequenos, isso não costuma causar muitos problemas, mas em projetos grandes, com muitas linhas e elementos, pode ficar difícil controlar qual estilo realmente será usado. A especificidade depende do tipo de seletor que usamos: seletores de tags são mais fracos, enquanto seletores de classe têm mais força, e seletores de ID são ainda mais fortes. Quanto mais específico for o seletor, maior a chance dele sobrescrever outros estilos. Por isso, é importante planejar bem os seletores para evitar que estilos indesejados sejam aplicados em elementos errados, como quando usamos apenas "div" e acabamos afetando várias partes da página sem querer.
+        </p>
+        <p>
+            Porem temos algumas regras tambem, como por exemplo se formos selecionar uma < div > com um id container, e fizermos da seguinte forma: <br> <br>
+            #container { <br>
+                color: red; <br>
+            } <br> <br>
+            
+            E abaixo desse codigo outro: <br> <br>
+            #container {<br>
+                color: blue;<br>
+            } <br> <br>
+
+            Quem ira ganhar nesse caso é o #container aplicado por ultimo, por conta da ordem, como ele foi o ultimo, ele sera adicionado. <br>
+            Ex:
+        </p>
+
+        <div id="teste">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci similique quos sapiente tempora error ducimus labore autem ipsam illo, voluptatem illum cum, dicta dignissimos, maiores est nobis nisi quisquam? Illo.
+            </p>
+        </div>
         
 
        
-    <a href="../" id="next">Proxima Aula - </a>
+    <a href="../03_cascata/index.html" id="next">Proxima Aula - Cascata</a>
 
     </div>
     
