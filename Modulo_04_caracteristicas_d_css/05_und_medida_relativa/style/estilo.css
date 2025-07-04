@@ -146,16 +146,20 @@ body #teste {
     color: blue;
 }
 
-.px {
-    background-color: red;
-    height: 200px;
-    width: 200px;
+#boxPai {
+    font-size: 20px;
 }
 
-.pt {
+.em {
     background-color: red;
-    height: 200pt;
-    width: 200pt;
+    height: 10em;
+    width: 10em;
+}
+
+.rem {
+    background-color: red;
+    height: 10rem;
+    width: 10rem;
     margin: 20px 0px;
 }
 .in {
