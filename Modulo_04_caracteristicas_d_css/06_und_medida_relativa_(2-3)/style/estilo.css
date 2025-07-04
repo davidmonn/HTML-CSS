@@ -162,21 +162,21 @@ body #teste {
     width: 10rem;
     margin: 20px 0px;
 }
-.in {
+.porcent {
     background-color: red;
-    height: 5in;
+    height: 50%;
+    width: 50%;
     margin: 20px 0px;
-    width: 5in;
 }
-.cm {
+.ex {
     background-color: red;
-    height: 10cm;
+    height: 15ex;
+    width: 15ex;
     margin: 20px 0px;
-    width: 10cm;
 }
-.mm {
+.ch {
     background-color: red;
-    height: 100mm;
+    height: 5ch;
+    width: 17ch;
     margin: 20px 0px;
-    width: 100mm;
 }

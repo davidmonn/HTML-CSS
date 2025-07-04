@@ -10,7 +10,7 @@
 
     <div id="main">
 
-        <a href="../04_und_medida_absoluta/index.html">Aula anterior - Unidades de Medidas Absoluta</a>
+        <a href="../05_und_medida_relativa_(1-3)/index.html">Aula anterior - Unidades de Medidas Relativa (1/3)</a>
 
         <h1 id="title">CSS - Unidade de Medida Relativas (2/3)</h1>
         <p>
@@ -20,19 +20,30 @@
         <h3>Unidades Relativas:</h3>
         <ul>
             <li>
-                <strong>Em:</strong> é baseada no <strong>font-size</strong> do elemento pai. Se o pai não tivesse um font-size definido, o filho herdaria do body (16px), ou seja: 1.5 * 16px = 24px.
+                <strong>em:</strong> é baseada no <strong>font-size</strong> do elemento pai. Se o pai não tivesse um font-size definido, o filho herdaria do body (16px), ou seja: 1.5 * 16px = 24px.
             </li> <br>
             <li>
-                <strong>REM (Root EM):</strong>
+                <strong>rem (Root EM):</strong>
                 É uma unidade de medida relativa ao tamanho da fonte definida no elemento raiz (html).
                 Não importa o tamanho da fonte dos elementos pais, o rem sempre usa como base o valor do font-size do html.
                 Por padrão, nos navegadores, o font-size do html é 16px (salvo se for alterado).
             </li> <br>
             <li>
-
+                <strong>% (Porcentagem):</strong>
+                A unidade % usa como base o valor disponível no elemento pai, não o tamanho da tela.
+                Ela calcula a porcentagem em relação ao tamanho do elemento no qual está inserida, ou seja, é relativa ao elemento pai ou ao contexto em que está aplicada.
             </li> <br>
             <li>
-
+                <strong>ex</strong>
+                É uma unidade de medida relativa à altura da letra “x” da fonte usada no elemento.
+                Ou seja, o valor de 1ex corresponde à altura do caractere “x” minúsculo na fonte atual.
+                É menos usada porque o tamanho da letra “x” pode variar bastante entre fontes diferentes.
+            </li>
+            <li>
+                <strong>ch</strong>
+                É uma unidade de medida relativa à largura do caractere “0” (zero) na fonte usada no elemento.
+                Ou seja, 1ch equivale à largura de um “0” na fonte atual.
+                É útil para criar elementos com largura proporcional à quantidade de caracteres (ex: caixas de texto).
             </li>
         </ul>
 
@@ -47,8 +58,17 @@
             <div class="rem">
                 <strong>rem:</strong> <br> height: 10rem - width: 10rem
             </div>
-            <div class=""></div>
-            <div class=""></div>
+            <div class="porcent">
+                <strong>% (porcentagem):</strong> <br> height: 50% - width: 50%
+            </div>
+            <div class="ex">
+                <strong>ex:</strong> <br> heigth: 15ex - width: 15ex
+            </div>
+            <div class="ch">
+                <strong>ch:</strong> <br> height:17  - width: 17
+            </div>
+
+
         </div>
        
     <a href="../" id="next">Proxima Aula - </a>
