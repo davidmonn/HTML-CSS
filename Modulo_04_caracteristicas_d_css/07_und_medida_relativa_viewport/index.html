@@ -12,61 +12,51 @@
 
         <a href="../06_und_medida_relativa_(2-3)/index.html">Aula anterior - Unidades de Medidas Relativa (2/3)</a>
 
-        <h1 id="title">CSS - Unidade de Medida Relativas (3/3)</h1>
+        <h1 id="title">CSS - Unidade de Medida Relativas Viewport</h1>
         <p>
-            As unidades de medidas <strong>relativas</strong>, iram mudar de tamanho baseado nos elementos que temos em nossa pagina.
+            <strong>Viewport</strong> é a área visível do site na tela do dispositivo. Usamos a tag meta viewport para adaptar o site a diferentes tamanhos de tela, como celular e tablet. Unidades usadas: vw representa a largura da tela e vh representa a altura da tela.
+        </p>
+        <p>
+           Pode ser usado, por exemplo, para criar um menu que vá de cima a baixo, ocupando toda a altura da tela.
         </p>
 
-        <h3>Unidades Relativas:</h3>
+        <h3>Diferenca % e vh ou vw</h3>
+        <p>
+            A % é referente ao espaço disponível do elemento pai. Já o vh e o vw são relativos à tela inteira.
+        </p>
+
+        <h3>Unidades Relativas viewport:</h3>
         <ul>
             <li>
-                <strong>em:</strong> é baseada no <strong>font-size</strong> do elemento pai. Se o pai não tivesse um font-size definido, o filho herdaria do body (16px), ou seja: 1.5 * 16px = 24px.
+                <strong>vw (viewport width):</strong>
+                Se você colocar width: 50vw;
+                O elemento terá 50% da largura da tela, independente do tamanho do elemento pai.
             </li> <br>
             <li>
-                <strong>rem (Root EM):</strong>
-                É uma unidade de medida relativa ao tamanho da fonte definida no elemento raiz (html).
-                Não importa o tamanho da fonte dos elementos pais, o rem sempre usa como base o valor do font-size do html.
-                Por padrão, nos navegadores, o font-size do html é 16px (salvo se for alterado).
+                <strong>vh (viewport height):</strong>
+                Se colocar height: 100vh;
+                O elemento terá a altura igual a 100% da altura da tela.
             </li> <br>
             <li>
-                <strong>% (Porcentagem):</strong>
-                A unidade % usa como base o valor disponível no elemento pai, não o tamanho da tela.
-                Ela calcula a porcentagem em relação ao tamanho do elemento no qual está inserida, ou seja, é relativa ao elemento pai ou ao contexto em que está aplicada.
+                <strong>vmin (viewport minimum):</strong>
+                Se colocar width: 10vmin;
+                O elemento terá largura igual a 10% do menor valor entre a largura e altura da tela. Útil para manter proporção em telas diferentes.
             </li> <br>
             <li>
-                <strong>ex</strong>
-                É uma unidade de medida relativa à altura da letra “x” da fonte usada no elemento.
-                Ou seja, o valor de 1ex corresponde à altura do caractere “x” minúsculo na fonte atual.
-                É menos usada porque o tamanho da letra “x” pode variar bastante entre fontes diferentes.
-            </li>
-            <li>
-                <strong>ch</strong>
-                É uma unidade de medida relativa à largura do caractere “0” (zero) na fonte usada no elemento.
-                Ou seja, 1ch equivale à largura de um “0” na fonte atual.
-                É útil para criar elementos com largura proporcional à quantidade de caracteres (ex: caixas de texto).
+                v<strong>max (viewport maximum):</strong>
+                Se colocar width: 10vmax;
+                O elemento terá largura igual a 10% do maior valor entre largura e altura da tela.
             </li>
         </ul>
 
+        <h3>Obs:</h3>
         <p>
-            Nos exemplos abaixo, temos um <strong>box pai</strong> com um font-size de 20px. 
+            Nem todos os navegadores antigos suportam perfeitamente essas unidades, o que pode causar inconsistências em alguns casos. <br>
+            Em layouts muito complexos ou em dispositivos com orientações que mudam (retrato/paisagem), o comportamento delas pode não ser tão previsível. <br>
+            Desenvolvedores costumam preferir usar vw e vh, que são mais diretos e confiáveis para a maioria das situações. <br>
+            Por isso, vmin e vmax são mais usados em casos específicos onde essa relação entre largura e altura da viewport ajuda a manter proporções, mas não são tão populares para layouts comuns.
         </p>
-
-        <div id="boxPai">
-            <div class="em">
-                <strong>em:</strong> <br> height: 10em - width:10em
-            </div>
-            <div class="rem">
-                <strong>rem:</strong> <br> height: 10rem - width: 10rem
-            </div>
-            <div class="porcent">
-                <strong>% (porcentagem):</strong> <br> height: 50% - width: 50%
-            </div>
-            <div class="ex">
-                <strong>ex:</strong> <br> heigth: 15ex - width: 15ex
-            </div>
-            <div class="ch">
-                <strong>ch:</strong> <br> height:17  - width: 17
-            </div>
+       
 
 
         </div>
