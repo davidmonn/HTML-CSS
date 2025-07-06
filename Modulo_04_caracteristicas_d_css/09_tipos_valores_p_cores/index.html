@@ -3,17 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS - Inherit</title>
+    <title>CSS - Tipos de Valores para Cores</title>
     <link rel="stylesheet" href="style/estilo.css">
 </head>
 <body>
 
     <div id="main">
 
-        <a href="../08_inherit/index.html">Aula anterior - Inherit</a>
+        <a href="../08_inherit/index.html">Aula anterior - Tipos de Valores para Cores</a>
 
-        <h1 id="title">CSS - Inherit</h1>
-        
+        <h1 id="title">CSS - Tipos de Valores para Cores</h1>
+        <p>
+            Temos algumas formas de poder estar adicionando cores em nosso site, como:
+        </p>
+        <ul>
+            <li>
+                <strong>Nome:</strong>usa o nome da cor em inglês.
+Ex.: red, blue, green.
+            </li>
+            <li>
+                <strong>Hexadecimal:</strong> É uma combinação de números e letras que representam a quantidade de vermelho, verde e azul. Ex.: #ff0000 (vermelho), #0000ff (azul). Muito usado e aceita cores mais precisas.
+            </li>
+            <li>
+                <strong>RGB:</strong> Significa Red, Green, Blue. Você define a intensidade de cada cor de 0 a 255. Ex.: rgb(255, 0, 0) (vermelho). Permite criar qualquer cor misturando os três valores.
+            </li>
+            <li>
+                <strong>RGBA:</strong> É igual ao RGB, mas adiciona o Alpha, que controla a transparência de 0 (totalmente transparente) a 1 (opaco). Ex.: rgba(255, 0, 0, 0.5) (vermelho com 50% de transparência).
+            </li>
+            <li>
+                <strong>HSL:</strong> Significa Hue (matiz), Saturation (saturação), Lightness (luminosidade). Matiz: de 0 a 360 (cobre todas as cores). Saturação: 0% a 100% (sem cor até cor forte). Luminosidade: 0% (preto) a 100% (branco). Ex.: hsl(0, 100%, 50%) (vermelho puro). Mais fácil de criar tons claros ou escuros.
+            </li>
+            <li>
+                <strong>HSLA:</strong> É o HSL com Alpha para controlar a transparência. Ex.: hsla(0, 100%, 50%, 0.5) (vermelho com transparência).
+            </li>
+            <li>
+                <strong>currentColor:</strong> currentColor funciona dentro do próprio elemento onde ela está sendo usada. Ela pega o valor da propriedade color daquele elemento e aplica em outras propriedades como borda sombra, fundo, etc.
+            </li>
+
+        </ul>
 
     
        

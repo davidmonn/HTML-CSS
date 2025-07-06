@@ -62,9 +62,9 @@ ul {
     padding-left: 25px
 }
 
-/* ul li {
-    margin-top: ;
-} */
+ul li {
+    margin-top: 15px;
+}
 
 #next {
     /* margin: 0px 250px; */
@@ -144,4 +144,8 @@ legend {
 
 .boxPai h1 {
     font-size: inherit;
+}
+
+li {
+    margin-bottom: 15px 0px;
 }
